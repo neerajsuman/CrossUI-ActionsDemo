@@ -63,7 +63,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("28.333333333333332em")
                 .setHeight("14.166666666666666em")
                 .setCaption("Panel")
-                );
+            );
             
             host.ctl_panel7.append(
                 xui.create("xui.UI.TreeView")
@@ -135,7 +135,7 @@ xui.Class('App', 'xui.Module',{
                     }
                 ])
                 .onItemSelected("_ctl_treeview5_onitemselected")
-                );
+            );
             
             host.ctl_panel7.append(
                 xui.create("xui.UI.TreeGrid")
@@ -146,25 +146,61 @@ xui.Class('App', 'xui.Module',{
                         "id":"col1",
                         "width":"6.666666666666667em",
                         "type":"input",
-                        "caption":"col1"
+                        "caption":"col1",
+                        "_cells":{
+                            "row1":"-c_a",
+                            "row2":"-c_e"
+                        },
+                        "_serialId":"-h_a",
+                        "_colWidth":"6.666666666666667em",
+                        "_cellWidth":"6.666666666666667em",
+                        "_hcellheight":"2em",
+                        "_region":2
                     },
                     {
                         "id":"col2",
                         "width":"6.666666666666667em",
                         "type":"input",
-                        "caption":"col2"
+                        "caption":"col2",
+                        "_cells":{
+                            "row1":"-c_b",
+                            "row2":"-c_f"
+                        },
+                        "_serialId":"-h_b",
+                        "_colWidth":"6.666666666666667em",
+                        "_cellWidth":"6.666666666666667em",
+                        "_hcellheight":"2em",
+                        "_region":2
                     },
                     {
                         "id":"col3",
                         "width":"6.666666666666667em",
                         "type":"input",
-                        "caption":"col3"
+                        "caption":"col3",
+                        "_cells":{
+                            "row1":"-c_c",
+                            "row2":"-c_g"
+                        },
+                        "_serialId":"-h_c",
+                        "_colWidth":"6.666666666666667em",
+                        "_cellWidth":"6.666666666666667em",
+                        "_hcellheight":"2em",
+                        "_region":2
                     },
                     {
                         "id":"col4",
                         "width":"6.666666666666667em",
                         "type":"input",
-                        "caption":"col4"
+                        "caption":"col4",
+                        "_cells":{
+                            "row1":"-c_d",
+                            "row2":"-c_h"
+                        },
+                        "_serialId":"-h_d",
+                        "_colWidth":"6.666666666666667em",
+                        "_cellWidth":"6.666666666666667em",
+                        "_hcellheight":"2em",
+                        "_region":2
                     }
                 ])
                 .setRows([
@@ -242,7 +278,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -254,7 +290,7 @@ xui.Class('App', 'xui.Module',{
                 .setOverflow("hidden")
                 .setCaption("URL")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
@@ -264,7 +300,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setHtml("URL Test 1")
+                .setCaption("URL Test 1")
                 .onClick([
                     {
                         "desc":"self",
@@ -276,7 +312,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"open--_self"
                     }
                 ])
-                );
+            );
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
@@ -286,7 +322,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setHtml("URL Test 2")
+                .setCaption("URL Test 2")
                 .onClick([
                     {
                         "desc":"blank",
@@ -298,7 +334,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"open--_blank"
                     }
                 ])
-                );
+            );
             
             host.ctl_group1.append(
                 xui.create("xui.UI.HTMLButton")
@@ -308,7 +344,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setHtml("Email Test")
+                .setCaption("Email Test")
                 .onClick([
                     {
                         "desc":"email",
@@ -320,7 +356,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"mailTo"
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -332,7 +368,7 @@ xui.Class('App', 'xui.Module',{
                 .setOverflow("hidden")
                 .setCaption("System Message")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -343,7 +379,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
                 .setZIndex(1002)
-                .setHtml("Alert Test")
+                .setCaption("Alert Test")
                 .onClick([
                     {
                         "desc":"alert",
@@ -367,7 +403,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"message"
                     }
                 ])
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -377,7 +413,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
-                .setHtml("Pop Message")
+                .setCaption("Pop Message")
                 .onClick([
                     {
                         "desc":"message",
@@ -390,7 +426,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"pop"
                     }
                 ])
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -400,7 +436,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
-                .setHtml("Floating Message")
+                .setCaption("Floating Message")
                 .onClick([
                     {
                         "desc":"action",
@@ -415,7 +451,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"message"
                     }
                 ])
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -425,7 +461,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.3333333333333335em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setHtml("Show Waiting")
+                .setCaption("Show Waiting")
                 .onClick([
                     {
                         "desc":"wait",
@@ -443,7 +479,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":1000
                     }
                 ])
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -454,7 +490,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
                 .setZIndex(1002)
-                .setHtml("Confirm Test")
+                .setCaption("Confirm Test")
                 .onClick([
                     {
                         "desc":"confirm",
@@ -506,7 +542,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                );
+            );
             
             host.ctl_group2.append(
                 xui.create("xui.UI.HTMLButton")
@@ -517,7 +553,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
                 .setZIndex(1002)
-                .setHtml("Prompt Test")
+                .setCaption("Prompt Test")
                 .onClick([
                     {
                         "desc":"prompt",
@@ -570,7 +606,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -582,7 +618,7 @@ xui.Class('App', 'xui.Module',{
                 .setOverflow("hidden")
                 .setCaption("Controls")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group3.append(
                 xui.create("xui.UI.HTMLButton")
@@ -592,7 +628,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.3333333333333335em")
                 .setWidth("8.333333333333334em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Destroy Control")
+                .setCaption("Destroy Control")
                 .onClick([
                     {
                         "desc":"dest",
@@ -602,7 +638,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"destroy"
                     }
                 ])
-                );
+            );
             
             host.ctl_group3.append(
                 xui.create("xui.UI.HTMLButton")
@@ -612,7 +648,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.3333333333333335em")
                 .setWidth("8.333333333333334em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Show / Hide Control")
+                .setCaption("Show / Hide Control")
                 .onClick([
                     {
                         "desc":"hide",
@@ -630,7 +666,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":500
                     }
                 ])
-                );
+            );
             
             host.ctl_group3.append(
                 xui.create("xui.UI.HTMLButton")
@@ -640,7 +676,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("17.5em")
                 .setHeight("2.5em")
-                .setHtml("Modify Control's properties")
+                .setCaption("Modify Control's properties")
                 .onClick([
                     {
                         "desc":"prop1",
@@ -693,7 +729,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"setProperties"
                     }
                 ])
-                );
+            );
             
             host.ctl_group3.append(
                 xui.create("xui.UI.HTMLButton")
@@ -703,7 +739,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("3.3333333333333335em")
                 .setWidth("8.333333333333334em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Show Control to Container")
+                .setCaption("Show Control to Container")
                 .onClick([
                     {
                         "desc":"con",
@@ -726,7 +762,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"show"
                     }
                 ])
-                );
+            );
             
             host.ctl_group3.append(
                 xui.create("xui.UI.HTMLButton")
@@ -736,7 +772,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setHtml("Panel Waiting")
+                .setCaption("Panel Waiting")
                 .onClick([
                     {
                         "desc":"wait",
@@ -754,7 +790,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":1000
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -766,7 +802,7 @@ xui.Class('App', 'xui.Module',{
                 .setOverflow("hidden")
                 .setCaption("Items and Rows")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -776,7 +812,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Clear Items in TreeView")
+                .setCaption("Clear Items in TreeView")
                 .onClick([
                     {
                         "desc":"action",
@@ -786,7 +822,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"clearItems"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -796,7 +832,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("8.333333333333334em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Clear Rows")
+                .setCaption("Clear Rows")
                 .onClick([
                     {
                         "desc":"action",
@@ -806,7 +842,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"removeAllRows"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -816,7 +852,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("12.5em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Clear Columns")
+                .setCaption("Clear Columns")
                 .onClick([
                     {
                         "desc":"action",
@@ -826,7 +862,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"setHeader"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -836,7 +872,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Remove Items in TreeView")
+                .setCaption("Remove Items in TreeView")
                 .onClick([
                     {
                         "desc":"action",
@@ -857,7 +893,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"removeItems"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -867,7 +903,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("8.333333333333334em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Remove Rows")
+                .setCaption("Remove Rows")
                 .onClick([
                     {
                         "desc":"action",
@@ -888,7 +924,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"removeRows"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -898,7 +934,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("12.5em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Remove Columns")
+                .setCaption("Remove Columns")
                 .onClick([
                     {
                         "desc":"action",
@@ -910,7 +946,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"removeCols"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -920,7 +956,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Insert Items to TreeBar")
+                .setCaption("Insert Items to TreeBar")
                 .onClick([
                     {
                         "desc":"first",
@@ -939,7 +975,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,null,true
+                            null,
+                            null,
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -954,7 +992,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"last"
                                 }
                             ],
-                            null,null,false
+                            null,
+                            null,
+                            false
                         ],
                         "method":"insertItems"
                     },
@@ -969,7 +1009,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"a node2"
                                 }
                             ],
-                            null,"node2",false
+                            null,
+                            "node2",
+                            false
                         ],
                         "method":"insertItems"
                     },
@@ -984,7 +1026,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"a last"
                                 }
                             ],
-                            null,"last",false
+                            null,
+                            "last",
+                            false
                         ],
                         "method":"insertItems"
                     },
@@ -999,7 +1043,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"b node1"
                                 }
                             ],
-                            null,"node1",true
+                            null,
+                            "node1",
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -1014,7 +1060,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"b  last"
                                 }
                             ],
-                            null,"last",true
+                            null,
+                            "last",
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -1029,7 +1077,9 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"subfirst"
                                 }
                             ],
-                            "node1",null,true
+                            "node1",
+                            null,
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -1044,12 +1094,14 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"sublast"
                                 }
                             ],
-                            "node1",null,false
+                            "node1",
+                            null,
+                            false
                         ],
                         "method":"insertItems"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1059,7 +1111,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("8.333333333333334em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Insert Rows to TreeGrid")
+                .setCaption("Insert Rows to TreeGrid")
                 .onClick([
                     {
                         "desc":"first",
@@ -1086,7 +1138,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,null,true
+                            null,
+                            null,
+                            true
                         ],
                         "method":"insertRows"
                     },
@@ -1115,7 +1169,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,null,false
+                            null,
+                            null,
+                            false
                         ],
                         "method":"insertRows"
                     },
@@ -1144,7 +1200,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,"row2",true
+                            null,
+                            "row2",
+                            true
                         ],
                         "method":"insertRows"
                     },
@@ -1173,7 +1231,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,"last",true
+                            null,
+                            "last",
+                            true
                         ],
                         "method":"insertRows"
                     },
@@ -1202,7 +1262,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,"row2",false
+                            null,
+                            "row2",
+                            false
                         ],
                         "method":"insertRows"
                     },
@@ -1231,7 +1293,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            null,"first",false
+                            null,
+                            "first",
+                            false
                         ],
                         "method":"insertRows"
                     },
@@ -1259,7 +1323,9 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            "row2",null,true
+                            "row2",
+                            null,
+                            true
                         ],
                         "method":"insertRows"
                     },
@@ -1287,12 +1353,14 @@ xui.Class('App', 'xui.Module',{
                                     ]
                                 }
                             ],
-                            "row2","",false
+                            "row2",
+                            "",
+                            false
                         ],
                         "method":"insertRows"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1302,7 +1370,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Update Item in TreeView")
+                .setCaption("Update Item in TreeView")
                 .onClick([
                     {
                         "desc":"a",
@@ -1329,7 +1397,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"updateItem"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1339,7 +1407,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("8.333333333333334em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Update Row in Grid")
+                .setCaption("Update Row in Grid")
                 .onClick([
                     {
                         "desc":"a",
@@ -1366,7 +1434,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"updateRow"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1376,7 +1444,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("12.5em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Update Column in Grid")
+                .setCaption("Update Column in Grid")
                 .onClick([
                     {
                         "desc":"a",
@@ -1392,7 +1460,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"updateHeader"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1402,7 +1470,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("12.5em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Update Cell in Grid")
+                .setCaption("Update Cell in Grid")
                 .onClick([
                     {
                         "desc":"a",
@@ -1429,7 +1497,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"updateCellByRowCol2"
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1439,7 +1507,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Toggle Panel")
+                .setCaption("Toggle Panel")
                 .onClick([
                     {
                         "desc":"fold",
@@ -1463,7 +1531,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":500
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1473,7 +1541,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Toggle TreeView")
+                .setCaption("Toggle TreeView")
                 .onClick([
                     {
                         "desc":"expand",
@@ -1497,7 +1565,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":800
                     }
                 ])
-                );
+            );
             
             host.ctl_group10.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1507,7 +1575,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.5em")
                 .setHeight("3.3333333333333335em")
-                .setHtml("Toggle TreeGrid")
+                .setCaption("Toggle TreeGrid")
                 .onClick([
                     {
                         "desc":"expand",
@@ -1531,7 +1599,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":800
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -1543,7 +1611,7 @@ xui.Class('App', 'xui.Module',{
                 .setOverflow("hidden")
                 .setCaption("Pages")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.Div")
@@ -1558,7 +1626,7 @@ xui.Class('App', 'xui.Module',{
                         "border-radius":"4px 4px 4px 4px"
                     }
                 })
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1568,7 +1636,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0.8333333333333334em")
                 .setWidth("7.5em")
                 .setHeight("2.5em")
-                .setHtml("Show Page")
+                .setCaption("Show Page")
                 .onClick([
                     {
                         "desc":"action",
@@ -1580,7 +1648,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"show"
                     }
                 ])
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1590,7 +1658,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("1.6666666666666667em")
                 .setWidth("7.5em")
                 .setHeight("2.5em")
-                .setHtml("Hide Page")
+                .setCaption("Hide Page")
                 .onClick([
                     {
                         "desc":"Hide page",
@@ -1600,7 +1668,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"hide"
                     }
                 ])
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1610,7 +1678,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("5em")
                 .setWidth("7.5em")
                 .setHeight("2.5em")
-                .setHtml("Destroy Page")
+                .setCaption("Destroy Page")
                 .onClick([
                     {
                         "desc":"Destroy",
@@ -1620,7 +1688,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"destroy"
                     }
                 ])
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1630,7 +1698,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("7.5em")
                 .setHeight("2.5em")
-                .setHtml("Fill Data")
+                .setCaption("Fill Data")
                 .onClick([
                     {
                         "desc":"action",
@@ -1642,7 +1710,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"setData"
                     }
                 ])
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1652,19 +1720,17 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0.8333333333333334em")
                 .setWidth("6.166666666666667em")
                 .setHeight("12.5em")
-                .setHtml("&gt;&gt; <br><br>Switch to<div><br></div><div>another</div><div><br></div><div>Page</div>")
+                .setCaption("&gt;&gt; <br><br>Switch to<div><br></div><div>another</div><div><br></div><div>Page</div>")
                 .onClick([
                     {
                         "desc":"动作1",
                         "type":"page",
                         "target":"App.XUIPage2",
-                        "params":[
-                            true
-                        ],
+                        "params":[true],
                         "method":"switch"
                     }
                 ])
-                );
+            );
             
             host.ctl_group12.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1674,7 +1740,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("7.5em")
                 .setWidth("7.5em")
                 .setHeight("2.5em")
-                .setHtml("Fill Profiles")
+                .setCaption("Fill Profiles")
                 .onClick([
                     {
                         "desc":"action",
@@ -1686,7 +1752,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"setProfile"
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Group")
@@ -1697,7 +1763,7 @@ xui.Class('App', 'xui.Module',{
                 .setHeight("15.833333333333334em")
                 .setCaption("Others")
                 .setToggleBtn(false)
-                );
+            );
             
             host.ctl_group21.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1707,7 +1773,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0.8333333333333334em")
                 .setWidth("9.166666666666666em")
                 .setHeight("2.5em")
-                .setHtml("RPC Call")
+                .setCaption("RPC Call")
                 .onClick([
                     {
                         "desc":"action",
@@ -1740,7 +1806,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"pop"
                     }
                 ])
-                );
+            );
             
             host.ctl_group21.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1750,7 +1816,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("4.166666666666667em")
                 .setWidth("9.166666666666666em")
                 .setHeight("2.5em")
-                .setHtml("Conditions")
+                .setCaption("Conditions")
                 .onClick([
                     {
                         "desc":"=",
@@ -1913,7 +1979,7 @@ xui.Class('App', 'xui.Module',{
                         ]
                     }
                 ])
-                );
+            );
             
             host.ctl_group21.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1923,7 +1989,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("7.5em")
                 .setWidth("9.166666666666666em")
                 .setHeight("2.5em")
-                .setHtml("Keyborad Event")
+                .setCaption("Keyborad Event")
                 .onHotKeydown([
                     {
                         "desc":"action1",
@@ -1947,7 +2013,7 @@ xui.Class('App', 'xui.Module',{
                     }
                 ])
                 .onClick([ ])
-                );
+            );
             
             host.ctl_group21.append(
                 xui.create("xui.UI.HTMLButton")
@@ -1957,7 +2023,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("10.833333333333334em")
                 .setWidth("9.166666666666666em")
                 .setHeight("2.5em")
-                .setHtml("Mouse Event")
+                .setCaption("Mouse Event")
                 .onClick([
                     {
                         "desc":"Mouse",
@@ -1978,13 +2044,34 @@ xui.Class('App', 'xui.Module',{
                         "event":1
                     }
                 ])
-                );
+            );
+            
+            host.ctl_pane39.append(
+                xui.create("xui.UI.Span")
+                .setHost(host,"xui_ui_span7")
+                .setLeft("14.5em")
+                .setTop("6em")
+                .setWidth("4.9em")
+                .setHeight("1.1em")
+                .setHtml("Softwares")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#9400D3",
+                        "background-color":"#E1FFFF",
+                        "font-family":"impact,chicago",
+                        "font-size":"20px",
+                        "font-style":"italic",
+                        "text-align":"left",
+                        "box-shadow":"17px 11px 10px 0px #696969"
+                    }
+                })
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Dialog")
                 .setHost(host,"ctl_dialog3")
-                .setLeft("31.666666666666668em")
-                .setTop("0.8333333333333334em")
+                .setLeft("23.333333333333332em")
+                .setTop("1.6666666666666667em")
                 .setWidth("36.666666666666664em")
                 .setHeight("21.916666666666668em")
                 .setCaption("Stop close")
@@ -2001,73 +2088,115 @@ xui.Class('App', 'xui.Module',{
                         "return":false
                     }
                 ])
-                );
+            );
             
             host.ctl_dialog3.append(
-                xui.create("xui.UI.Tabs")
-                .setHost(host,"ctl_tabs4")
-                .setItems([
-                    {
-                        "id":"a",
-                        "caption":"page1",
-                        "image":""
-                    },
-                    {
-                        "id":"b",
-                        "caption":"page2",
-                        "image":""
-                    },
-                    {
-                        "id":"c",
-                        "caption":"page3",
-                        "image":""
+                xui.create("xui.UI.Span")
+                .setHost(host,"xui_ui_span3")
+                .setLeft("0.25em")
+                .setTop("0.4166666666666667em")
+                .setWidth("21.2em")
+                .setHeight("1.85em")
+                .setHtml("ASD RANSOMWARE PROTECTION")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FF0000",
+                        "background-color":"#FFFFFF",
+                        "font-family":"arial black,avant garde",
+                        "font-size":"20px",
+                        "font-weight":"bold",
+                        "font-style":"normal",
+                        "padding":"10px 0px 0px 0px",
+                        "margin":"1px 0px 0px 0px",
+                        "text-align":"center",
+                        "text-decoration":"underline",
+                        "text-shadow":"3px 2px 3px #696969",
+                        "box-shadow":"inset 0px 7px 6px 2px #696969",
+                        "$gradient":{
+                            "stops":[
+                                {
+                                    "pos":"54%",
+                                    "clr":"#96C56F"
+                                },
+                                {
+                                    "pos":"100%",
+                                    "clr":"#A9DB80"
+                                },
+                                {
+                                    "pos":"100%",
+                                    "clr":"#8ED058"
+                                },
+                                {
+                                    "pos":"100%",
+                                    "clr":"#ffffff"
+                                }
+                            ],
+                            "type":"linear",
+                            "orient":"T"
+                        }
                     }
-                ])
-                .setValue("a")
-                );
+                })
+            );
             
-            host.ctl_tabs4.append(
-                xui.create("xui.UI.Layout")
-                .setHost(host,"ctl_layout14")
-                .setItems([
-                    {
-                        "id":"before",
-                        "pos":"before",
-                        "min":10,
-                        "size":80,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":false,
-                        "cmd":true
-                    },
-                    {
-                        "id":"main",
-                        "min":10,
-                        "size":80
-                    },
-                    {
-                        "id":"after",
-                        "pos":"after",
-                        "cmd":false,
-                        "min":10,
-                        "size":80,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":false
+            host.ctl_dialog3.append(
+                xui.create("xui.UI.Link")
+                .setHost(host,"xui_ui_link1")
+                .setLeft("0.35714285714285715em")
+                .setTop("6.785714285714286em")
+                .setWidth("9.071428571428571em")
+                .setHeight("2em")
+                .setCaption("Antivirus Software")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "background-color":"#0000FF",
+                        "font-family":"comic sans ms,cursive",
+                        "font-size":"14px",
+                        "padding":"9px 0px 0px 0px",
+                        "text-align":"center"
                     }
-                ])
-                .setType("horizontal")
-                , "a");
+                })
+            );
             
-            host.ctl_layout14.append(
-                xui.create("xui.UI.Image")
-                .setHost(host,"ctl_image103")
-                .setLeft("5em")
-                .setTop("5.833333333333333em")
-                .setWidth("11.666666666666666em")
-                .setHeight("3.3333333333333335em")
-                .setSrc("https://www.crossui.com/img/logo.png")
-                , "main");
+            host.ctl_dialog3.append(
+                xui.create("xui.UI.Link")
+                .setHost(host,"xui_ui_link4")
+                .setLeft("10.357142857142858em")
+                .setTop("6.785714285714286em")
+                .setWidth("9.071428571428571em")
+                .setHeight("2em")
+                .setCaption("Antivirus Software")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "background-color":"#0000FF",
+                        "font-family":"comic sans ms,cursive",
+                        "font-size":"14px",
+                        "padding":"9px 0px 0px 0px",
+                        "text-align":"center"
+                    }
+                })
+            );
+            
+            host.ctl_dialog3.append(
+                xui.create("xui.UI.Link")
+                .setHost(host,"xui_ui_link5")
+                .setLeft("20.357142857142858em")
+                .setTop("6.785714285714286em")
+                .setWidth("9.071428571428571em")
+                .setHeight("2em")
+                .setCaption("Antivirus Software")
+                .setCustomStyle({
+                    "KEY":{
+                        "color":"#FFFFFF",
+                        "background-color":"#0000FF",
+                        "font-family":"comic sans ms,cursive",
+                        "font-size":"14px",
+                        "padding":"9px 0px 0px 0px",
+                        "text-align":"center"
+                    }
+                })
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.Label")
@@ -2089,7 +2218,7 @@ xui.Class('App', 'xui.Module',{
                         "opacity":0.8
                     }
                 })
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.HTMLButton")
@@ -2099,7 +2228,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("23.666666666666668em")
                 .setWidth("8.5em")
                 .setHeight("3em")
-                .setHtml("Insert Items to Tabs")
+                .setCaption("Insert Items to Tabs")
                 .onClick([
                     {
                         "desc":"first",
@@ -2112,7 +2241,8 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"first"
                                 }
                             ],
-                            "",true
+                            "",
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -2127,7 +2257,8 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"last"
                                 }
                             ],
-                            "",false
+                            "",
+                            false
                         ],
                         "method":"insertItems"
                     },
@@ -2142,7 +2273,8 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"b-page2"
                                 }
                             ],
-                            "b",true
+                            "b",
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -2157,7 +2289,8 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"b-last"
                                 }
                             ],
-                            "last",true
+                            "last",
+                            true
                         ],
                         "method":"insertItems"
                     },
@@ -2172,7 +2305,8 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"a-page2"
                                 }
                             ],
-                            "b",false
+                            "b",
+                            false
                         ],
                         "method":"insertItems"
                     },
@@ -2187,12 +2321,13 @@ xui.Class('App', 'xui.Module',{
                                     "caption":"a-last"
                                 }
                             ],
-                            "last",false
+                            "last",
+                            false
                         ],
                         "method":"insertItems"
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.HTMLButton")
@@ -2202,7 +2337,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("23.666666666666668em")
                 .setWidth("8.5em")
                 .setHeight("3em")
-                .setHtml("Update Item in Tabs")
+                .setCaption("Update Item in Tabs")
                 .onClick([
                     {
                         "desc":"a",
@@ -2230,7 +2365,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"updateItem"
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.HTMLButton")
@@ -2240,7 +2375,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("23.666666666666668em")
                 .setWidth("8.5em")
                 .setHeight("3em")
-                .setHtml("Remove Items  in Tabs")
+                .setCaption("Remove Items  in Tabs")
                 .onClick([
                     {
                         "desc":"action",
@@ -2261,7 +2396,7 @@ xui.Class('App', 'xui.Module',{
                         "method":"removeItems"
                     }
                 ])
-                );
+            );
             
             host.ctl_pane39.append(
                 xui.create("xui.UI.HTMLButton")
@@ -2271,7 +2406,7 @@ xui.Class('App', 'xui.Module',{
                 .setTop("23.666666666666668em")
                 .setWidth("8.5em")
                 .setHeight("3em")
-                .setHtml("Select Tab")
+                .setCaption("Select Tab")
                 .onClick([
                     {
                         "desc":"action",
@@ -2293,7 +2428,7 @@ xui.Class('App', 'xui.Module',{
                         "timeout":1000
                     }
                 ])
-                );
+            );
             
             return children;
             // ]]Code created by CrossUI RAD Studio
